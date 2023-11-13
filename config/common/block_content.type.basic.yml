@@ -1,0 +1,10 @@
+uuid: 83ee1a06-74c4-4835-8fec-a9547f2c4ce2
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zglzjmYxi0G0ag9MZ02y0LSJOdpWRwJxyP_OvFojFyo
+id: basic
+label: 'Bloque básico'
+revision: 0
+description: 'Un bloque básico contiene un título y un cuerpo.'
