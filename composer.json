@@ -22,6 +22,7 @@
         "drupal/core-recommended": "^10.1",
         "drupal/field_group": "^3.4",
         "drupal/metatag": "^2.0",
+        "drupal/onlyone": "^2.0",
         "drupal/paragraphs": "^1.16",
         "drupal/pathauto": "^1.12",
         "drupal/search_api": "^1.30",

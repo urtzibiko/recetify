@@ -1,0 +1,11 @@
+#Ignore IDEs directories
+/.idea/
+/.vscode/
+
+# Other things
+*.cache
+*.sql
+*.sql.gz
+/web/sites/*/settings.ddev.php
+/web/sites/default/drushrc.php
+/web/sites/default/.gitignore
