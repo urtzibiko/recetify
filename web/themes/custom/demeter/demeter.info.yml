@@ -1,0 +1,22 @@
+name: demeter
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - demeter/base
+  - demeter/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - demeter/user
+  core/drupal.dropbutton:
+    - demeter/dropbutton
+  core/drupal.dialog:
+    - demeter/dialog
+  file/drupal.file:
+    - demeter/file
+  core/drupal.progress:
+    - demeter/progress
+core_version_requirement: ^10
+generator: 'starterkit_theme:10.1.6'
