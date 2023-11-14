@@ -20,3 +20,7 @@ libraries-extend:
     - demeter/progress
 core_version_requirement: ^10
 generator: 'starterkit_theme:10.1.6'
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
