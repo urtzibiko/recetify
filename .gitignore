@@ -2,6 +2,9 @@
 /.idea/
 /.vscode/
 
+# NPM packages
+node_modules
+
 # Other things
 *.cache
 *.sql

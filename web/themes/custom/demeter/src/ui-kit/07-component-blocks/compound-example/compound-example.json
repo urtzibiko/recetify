@@ -1,0 +1,29 @@
+{
+  "text": "Two examples",
+  "firstExample": {
+    "type": "component-blocks/simple-example",
+    "data" : {
+      "text": "First example",
+      "image": {
+        "type": "components/image",
+        "data": {
+          "src": "https://via.placeholder.com/50",
+          "alt": "First example image"
+        }
+      }
+    }
+  },
+  "secondExample": {
+    "type": "component-blocks/simple-example",
+    "data": {
+      "text": "Second example",
+      "image": {
+        "type": "components/image",
+        "data": {
+          "src": "https://via.placeholder.com/100",
+          "alt": "Second example image"
+        }
+      }
+    }
+  }
+}

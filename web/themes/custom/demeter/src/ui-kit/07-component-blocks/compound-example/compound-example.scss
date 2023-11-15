@@ -1,0 +1,8 @@
+.cb-compound-example {
+  padding:10px;
+  border: 1px solid red;
+  background-color: #ffc0c0;
+  .cb-simple-example:not(:last-child) {
+    margin-bottom:10px;
+  }
+}

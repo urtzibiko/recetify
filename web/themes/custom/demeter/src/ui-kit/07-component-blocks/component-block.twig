@@ -1,0 +1,4 @@
+<{{ componentTag ?: 'div'}} class="{{ 'cb-' ~ componentName }}{{ componentModifiers ? ' ' ~ 'cb-' ~ componentName ~ '--' ~ componentModifiers|join(' ' ~ 'cb-' ~ componentName ~ '--') }}{{ componentClasses ? ' ' ~ componentClasses|join(' ') }}">
+  {% block content %}
+  {% endblock %}
+</{{ componentTag ?: 'div'}}>

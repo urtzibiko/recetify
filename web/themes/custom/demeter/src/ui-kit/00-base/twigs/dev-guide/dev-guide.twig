@@ -1,0 +1,46 @@
+<div class="container mt-3">
+  <h1 class="mb-5">UI Kit</h1>
+  <div class="ml-3">
+
+    <h3 class="titular-maquetas">Páginas</h3>
+    <ul class="lista-maquetas">
+      {% for value in pages %}
+        <li><a href="pages/{{ value }}/{{ value }}.html">{{ value }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <h3 class="titular-maquetas">Componentes</h3>
+    <ul class="lista-maquetas">
+      <li>
+        <a href="component-list-template.html">
+          Todos los componentes
+        </a>
+      </li>
+      {% for value in components %}
+        <li>
+          <a href="components/{{ value.dirname }}/{{ value.filename }}.html">
+            {{ value.filename }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h3 class="titular-maquetas">Bloques de Componentes</h3>
+    <ul class="lista-maquetas">
+      {% for value in componentBlocks %}
+        <li>
+          <a href="component-blocks/{{ value.dirname }}/{{ value.filename }}.html">
+            {{ value.filename }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h3 class="titular-maquetas">
+      <a class="u-black u-text-underline" href="/assets/svgs/sprite/sprite.symbol.html">
+        SVG sprites
+      </a>
+    </h3>
+
+  </div>
+</div>

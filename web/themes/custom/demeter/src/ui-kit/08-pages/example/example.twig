@@ -1,0 +1,42 @@
+{% extends '@pages/page.twig' %}
+{% set pageName = 'example' %}
+{% block page %}
+
+  <div class="container u-relative">
+    <div class="d-flex flex-column flex-md-row justify-content-md-center align-items-md-center">
+      <div class="d-flex flex-column">
+        <br>
+        <h2>Compound example completely received via a DTO</h2>
+        {{ compoundExample|render }}
+        <br>
+        <br>
+        <h2>Just-in-time created component</h2>
+        {{ {
+          type: 'components/image',
+          data: {
+            src: 'https://via.placeholder.com/300',
+            alt: 'Just-in-time created component'
+          }
+        }|render }}
+        <br>
+        <br>
+        {{ {
+          type: 'component-blocks/simple-example',
+          data: {
+            text: '<h2>Just-in-time created component block</h2>',
+            image: {
+              type: 'components/image',
+              data: {
+                src: 'https://via.placeholder.com/300',
+                alt: 'Just-in-time created component block'
+              }
+            }
+          }
+        }|render }}
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

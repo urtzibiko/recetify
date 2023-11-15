@@ -1,0 +1,8 @@
+p {
+    margin-bottom: 0;
+    &:not([class]) {
+        &:not(:last-child) {
+            margin-bottom: $paragraph-margin-bottom;
+        }
+    }
+}

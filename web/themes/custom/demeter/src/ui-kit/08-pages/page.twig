@@ -1,0 +1,22 @@
+{% extends "@base/twigs/page.twig" %}
+
+{% block html %}
+
+  <div{% if pageName %} class="{{ 'p-' ~ pageName }}{{ pageModifiers ? ' ' ~ 'p-' ~ pageName ~ '--' ~ pageModifiers|join(' ' ~ 'p-' ~ pageName ~ '--') }}"{% endif %}>
+
+    {% block header %}
+      {% include '@component-blocks/header/header.twig' with header %}
+    {% endblock %}
+
+    {% block page %}
+      {% block content %}
+      {% endblock %}
+    {% endblock %}
+
+    {% block footer %}
+      {% include '@component-blocks/footer/footer.twig' with footer %}
+    {% endblock %}
+
+  </div>
+
+{% endblock %}

@@ -1,0 +1,110 @@
+$white:    #fff;
+$gray-100: #f2f2f2;
+$gray-200: #e6e6e6;
+$gray-300: #dcdcdc;
+$gray-400: #6c6c6c;
+$gray-700: #525252;
+$gray-800: #454546;
+$gray-900: #2d2d2d;
+$black:    #000;
+
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+);
+
+$red: #a71c15;
+
+$colors: (
+  "red":        $red,
+  "black":      $black,
+  "white":      $white,
+  "gray-light": $gray-300,
+  "gray":       $gray-400,
+  "gray-dark":  $gray-800
+);
+
+$red-500: $red;
+
+$reds: (
+  "red-500": $red-500
+);
+
+$primary:       $red;
+$light:         $gray-300;
+$dark:          $gray-900;
+$text-dark:     $gray-700;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1:  $spacer * .25,    // 4px
+  2:  $spacer * .5,     // 8px
+  3:  $spacer * .75,    // 12px
+  4:  $spacer * 1,      // 16px
+  5:  $spacer * 1.5,    // 24px
+  6:  $spacer * 2,      // 32px
+  7:  $spacer * 3,      // 48px
+  8:  $spacer * 4,      // 64px
+  9:  $spacer * 6,      // 96px
+  10: $spacer * 8,      // 128px
+  11: $spacer * 12,     // 192px
+  12: $spacer * 16,     // 256px
+  13: $spacer * 24,     // 384px
+  14: $spacer * 32,     // 512px
+  15: $spacer * 40,     // 640px
+  16: $spacer * 48,     // 768px
+);
+
+$body-color: $gray-400;
+
+$link-color: $primary;
+
+$grid-breakpoints: (
+  xs: 0,
+  lg: 992px
+);
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+$container-max-widths: (
+  sm: 1008px
+);
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+$grid-gutter-width: rem(48px);
+
+$border-width: 1px;
+
+$border-color:                $gray-300;
+
+$font-family-sans-serif:      'Gotham SSm A', 'Gotham SSm B';
+$font-family-serif:           'Hoefler Text A', 'Hoefler Text B';
+
+$font-family-base:            $font-family-serif;
+
+$font-size-base:              rem(19px);
+$font-size-sm:                rem(14px);
+$font-size-lg:                rem(22px);
+
+$line-height-base:            1.5;
+$line-height-sm:              1.25;
+$line-height-lg:              2;
+
+$h1-font-size: rem(36px);
+$h2-font-size: rem(30px);
+$h3-font-size: rem(24px);
+$h4-font-size: rem(20px);
+$h5-font-size: rem(18px);
+$h6-font-size: rem(16px);
+
+$headings-margin-bottom:      1em;
+$headings-font-weight:        500;
+$headings-line-height:        1.2;
+
+$paragraph-margin-bottom: 1em * $line-height-base;
