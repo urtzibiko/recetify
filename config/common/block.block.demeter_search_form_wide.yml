@@ -1,0 +1,23 @@
+uuid: 77d47e7b-c884-406e-a10d-5e4289482608
+langcode: es
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - demeter
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: demeter_search_form_wide
+theme: demeter
+region: header
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda (ancho)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

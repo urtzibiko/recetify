@@ -1,0 +1,20 @@
+uuid: e11d97ec-e26e-4b1b-ac26-5503b4f88b19
+langcode: es
+status: false
+dependencies:
+  theme:
+    - demeter
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: demeter_primary_admin_actions
+theme: demeter
+region: header
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Acciones principales de administración'
+  label_display: '0'
+  provider: core
+visibility: {  }

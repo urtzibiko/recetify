@@ -1,0 +1,43 @@
+uuid: eed32bf2-f60a-46c4-abb1-186a72d203ba
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.promoted_recipes.field_cta
+    - field.field.paragraph.promoted_recipes.field_recipes
+    - paragraphs.paragraphs_type.promoted_recipes
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.promoted_recipes.default
+targetEntityType: paragraph
+bundle: promoted_recipes
+mode: default
+content:
+  field_cta:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_recipes:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

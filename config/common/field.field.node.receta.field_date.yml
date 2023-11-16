@@ -1,0 +1,21 @@
+uuid: 421f31f1-6f59-4e54-acc6-f777175c1016
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.receta
+  module:
+    - datetime
+id: node.receta.field_date
+field_name: field_date
+entity_type: node
+bundle: receta
+label: Fecha
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -17,6 +17,8 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   entity_reference_revisions: 0
@@ -39,6 +41,7 @@ module:
   menu_ui: 0
   mysql: 0
   node: 0
+  onlyone: 0
   options: 0
   page_cache: 0
   paragraphs_type_permissions: 0
@@ -64,4 +67,7 @@ module:
 theme:
   olivero: 0
   claro: 0
+  stable9: 0
+  my_new_theme: 0
+  demeter: 0
 profile: standard

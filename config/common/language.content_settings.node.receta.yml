@@ -1,0 +1,18 @@
+uuid: f0afc22b-741e-45ff-9657-060f633ee6a9
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.receta
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.receta
+target_entity_type_id: node
+target_bundle: receta
+default_langcode: site_default
+language_alterable: false

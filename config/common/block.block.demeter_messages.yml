@@ -1,0 +1,22 @@
+uuid: 56b25ecc-0345-4b68-8594-2622fecff88b
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - demeter
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: demeter_messages
+theme: demeter
+region: header
+weight: -2
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Mensajes de estado'
+  label_display: '0'
+  provider: system
+visibility: {  }

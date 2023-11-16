@@ -1,0 +1,22 @@
+uuid: 9ba57bee-12e0-45cf-ab21-934454dd58ff
+langcode: es
+status: false
+dependencies:
+  theme:
+    - demeter
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: demeter_secondary_local_tasks
+theme: demeter
+region: header
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Solapas secundarias'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

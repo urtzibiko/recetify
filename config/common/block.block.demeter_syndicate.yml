@@ -1,0 +1,23 @@
+uuid: d0a969f0-386b-48de-908b-bd1266737167
+langcode: es
+status: false
+dependencies:
+  module:
+    - node
+  theme:
+    - demeter
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: demeter_syndicate
+theme: demeter
+region: header
+weight: 3
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'Canal RSS'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

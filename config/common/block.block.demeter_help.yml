@@ -1,0 +1,22 @@
+uuid: cbd69920-b3cd-4a30-8bb4-eef33d38d228
+langcode: es
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - demeter
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: demeter_help
+theme: demeter
+region: header
+weight: 2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

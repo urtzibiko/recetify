@@ -1,0 +1,20 @@
+uuid: 74bab491-980d-4c8a-ae30-97768f7561f5
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - my_new_theme
+id: my_new_theme_alternadordeidioma
+theme: my_new_theme
+region: secondary_menu
+weight: -5
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Alternador de idioma'
+  label_display: '0'
+  provider: language
+visibility: {  }

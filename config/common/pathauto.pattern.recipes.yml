@@ -1,0 +1,33 @@
+uuid: 0bf3d7ce-4e0b-4e18-bbde-daa1ebcd0639
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: recipes
+label: Recipes
+type: 'canonical_entities:node'
+pattern: '/recipes/[node:field_public_title]'
+selection_criteria:
+  fc8a0418-af22-48dd-b586-08615a354a1a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: fc8a0418-af22-48dd-b586-08615a354a1a
+    context_mapping:
+      node: node
+    bundles:
+      receta: receta
+  52e15112-c3d1-4591-b319-58c3f3df6c19:
+    id: language
+    negate: false
+    uuid: 52e15112-c3d1-4591-b319-58c3f3df6c19
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma

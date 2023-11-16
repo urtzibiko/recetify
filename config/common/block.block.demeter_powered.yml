@@ -1,0 +1,22 @@
+uuid: da53c5e8-0d61-4466-a323-0dd51f34d8de
+langcode: es
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - demeter
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: demeter_powered
+theme: demeter
+region: header
+weight: 5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

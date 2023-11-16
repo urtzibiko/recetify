@@ -1,0 +1,10 @@
+uuid: 5e142fa1-3083-424d-b466-f7ee1d177223
+langcode: es
+status: true
+dependencies: {  }
+id: promoted_recipes
+label: 'Recetas destacadas'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

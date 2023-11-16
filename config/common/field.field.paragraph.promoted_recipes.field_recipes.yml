@@ -1,0 +1,29 @@
+uuid: dafa1ce2-e1ae-49f7-a802-aade385d626f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_recipes
+    - node.type.receta
+    - paragraphs.paragraphs_type.promoted_recipes
+id: paragraph.promoted_recipes.field_recipes
+field_name: field_recipes
+entity_type: paragraph
+bundle: promoted_recipes
+label: Recetas
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      receta: receta
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

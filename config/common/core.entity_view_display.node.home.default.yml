@@ -1,0 +1,38 @@
+uuid: 26f3ac3b-cbf7-4828-8fcb-af8f4d2da43c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.home.field_paragraphs
+    - node.type.home
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_discovery
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.home.default
+targetEntityType: node
+bundle: home
+mode: default
+content:
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,68 @@
+uuid: 7fa4f45c-3c03-4f41-98dc-3f9aa79414aa
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.receta.field_date
+    - field.field.node.receta.field_description
+    - field.field.node.receta.field_public_title
+    - field.field.node.receta.field_recipe_image
+    - field.field.node.receta.field_teaser
+    - image.style.thumbnail
+    - node.type.receta
+  module:
+    - datetime
+    - field_layout
+    - layout_discovery
+    - media
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.receta.teaser
+targetEntityType: node
+bundle: receta
+mode: teaser
+content:
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_public_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_recipe_image:
+    type: media_thumbnail
+    label: above
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_teaser:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  field_description: true
+  langcode: true
+  links: true

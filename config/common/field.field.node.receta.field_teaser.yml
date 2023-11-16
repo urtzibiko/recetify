@@ -1,0 +1,19 @@
+uuid: 99b984ac-4c95-4431-b218-a1f62ddbbab0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser
+    - node.type.receta
+id: node.receta.field_teaser
+field_name: field_teaser
+entity_type: node
+bundle: receta
+label: Entradilla
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

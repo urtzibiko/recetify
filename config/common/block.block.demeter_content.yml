@@ -1,0 +1,22 @@
+uuid: c481455e-072a-45d4-8e59-a1e67551198b
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - demeter
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: demeter_content
+theme: demeter
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 10364744-b0fc-4c46-85d4-992e6258061f
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - my_new_theme
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: my_new_theme_search_form_wide
+theme: my_new_theme
+region: secondary_menu
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda (ancho)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

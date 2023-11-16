@@ -1,0 +1,18 @@
+uuid: 94c6c731-e8c1-420d-93d2-10cc22c8a17b
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic.changed
+field_name: changed
+entity_type: block_content
+bundle: basic
+label: Modificado
+description: 'The time that the content block was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

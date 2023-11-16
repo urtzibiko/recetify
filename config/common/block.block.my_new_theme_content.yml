@@ -1,0 +1,22 @@
+uuid: 1359970f-5023-4fdf-a25c-7ab87bfbf72a
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - my_new_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: my_new_theme_content
+theme: my_new_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility: {  }

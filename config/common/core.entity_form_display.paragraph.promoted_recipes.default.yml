@@ -1,0 +1,43 @@
+uuid: 0346ce59-07fc-4cbf-8281-66ad5f0e877c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.promoted_recipes.field_cta
+    - field.field.paragraph.promoted_recipes.field_recipes
+    - paragraphs.paragraphs_type.promoted_recipes
+  module:
+    - field_layout
+    - layout_discovery
+    - link
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: paragraph.promoted_recipes.default
+targetEntityType: paragraph
+bundle: promoted_recipes
+mode: default
+content:
+  field_cta:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_recipes:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

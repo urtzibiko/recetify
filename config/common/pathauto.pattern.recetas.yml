@@ -1,0 +1,33 @@
+uuid: 126f5ee2-ecf5-4843-942f-9af93523c4cd
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: recetas
+label: Recetas
+type: 'canonical_entities:node'
+pattern: '/recetas/[node:field_public_title]'
+selection_criteria:
+  3887728a-1050-4127-820f-e70618df9076:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 3887728a-1050-4127-820f-e70618df9076
+    context_mapping:
+      node: node
+    bundles:
+      receta: receta
+  6573338e-3795-4d43-a146-f5451ed06d0c:
+    id: language
+    negate: false
+    uuid: 6573338e-3795-4d43-a146-f5451ed06d0c
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      es: es
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Idioma
