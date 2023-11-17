@@ -1,0 +1,27 @@
+{
+  "logo_url": "../../../assets/images/logogrande2.png",
+  "logo_alt": "",
+  "menu": {
+    "type": "component-blocks/menu",
+    "data": {
+      "items": [
+        {
+          "text" : "Uno",
+          "URL" : "loquesea"
+        },
+        {
+          "text" : "Dos",
+          "URL" : "loquesea"
+        },
+        {
+          "text" : "Tres",
+          "URL" : "loquesea"
+        },
+        {
+          "text" : "Cuatro",
+          "URL" : "loquesea"
+        }
+      ]
+    }
+  }
+}
