@@ -1,19 +1,22 @@
-.custMenu {
+.cb-header__menu{
   display: flex;
-  justify-content: space-around;
   background-color: $green-l;
-  max-width: 600px;
   font-family: 'Poppins', sans-serif;
-  border-radius: 20px;
+  border-radius: 20px 20px 0px 0px;
   border: 2px solid $green-d;
-  padding: 0 40px;
+  border-bottom: 0;
+  padding: 0 10px;
+  height: 50%;
+  align-items: flex-end;
 }
 
 .menu-item {
-  padding: 15px 30px;
+  padding: 15px 50px;
   transition: all .25s ease-in-out;
+  font-size: 1.5em;
   &:hover {
     text-decoration: underline;
+    text-decoration-color: $green-d ;
     text-underline-offset: 5px;
     transform: scale(1.3);
   }
