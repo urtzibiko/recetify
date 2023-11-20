@@ -2,19 +2,19 @@
   "items": [
     {
       "text" : "Portada",
-      "URL" : "loquesea"
+      "url" : "loquesea"
     },
     {
       "text" : "Recetas",
-      "URL" : "loquesea"
+      "url" : "loquesea"
     },
     {
       "text" : "Masas",
-      "URL" : "loquesea"
+      "url" : "loquesea"
     },
     {
       "text" : "Noticias",
-      "URL" : "loquesea"
+      "url" : "loquesea"
     }
   ]
 }

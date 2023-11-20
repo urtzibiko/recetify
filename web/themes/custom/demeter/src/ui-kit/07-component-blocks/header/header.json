@@ -2,7 +2,7 @@
   "logo_url": "../../../assets/images/logogrande2.png",
   "logo_alt": "",
   "menu": {
-    "type": "component-blocks/menu",
+    "type": "component-blocks/header-menu",
     "data": {
       "items": [
         {
