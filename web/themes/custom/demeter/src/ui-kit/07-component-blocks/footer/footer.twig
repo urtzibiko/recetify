@@ -1,1 +1,21 @@
-FOOTER
+{% extends '@component-blocks/component-block.twig' %}
+{% set componentName = 'footer' %}
+{% block content %}
+  <div class="cb-{{ componentName }}__rss">
+    {% set iconCounter = 1%}
+    {% for icon in icons %}
+      <div class="icon icon-{{ iconCounter }}">
+        <a href="{{ icon.url }}" target="_blank"><img src="{{ icon.img }}" alt="{{ icon.alt }}"/></a>
+      </div>
+      {% set iconCounter = iconCounter + 1 %}
+    {% endfor %}
+  </div>
+  <div class="cb-{{ componentName }}__logo">
+    <img src="{{ logo_url }}" alt="{{ logo_alt }}" />
+  </div>
+  <div class="cb-{{ componentName }}__menu">
+    {% for item in menu %}
+    <a href="{{ item.url }}">{{ item.text }}</a>
+    {% endfor %}
+  </div>
+{% endblock %}
