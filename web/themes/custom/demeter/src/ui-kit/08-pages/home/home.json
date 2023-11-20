@@ -1,0 +1,102 @@
+{
+
+  "hero": {
+    "type": "component-blocks/hero",
+    "data": {
+
+    }
+  },
+
+
+
+
+  "header": {
+    "logo_url": "../../../assets/images/logogrande2.png",
+    "logo_alt": "",
+    "menu": {
+      "type": "component-blocks/header-menu",
+      "data": {
+        "items": [
+          {
+            "text" : "Uno",
+            "URL" : "loquesea"
+          },
+          {
+            "text" : "Dos",
+            "URL" : "loquesea"
+          },
+          {
+            "text" : "Tres",
+            "URL" : "loquesea"
+          },
+          {
+            "text" : "Cuatro",
+            "URL" : "loquesea"
+          }
+        ]
+      }
+    }
+  },
+  "footer": {
+    "icons": [
+      {
+        "img": "../../../assets/images/icons/facebook.png",
+        "url": "https://www.facebook.com/?locale=es_ES",
+        "alt": "facebook"
+      },
+      {
+        "img": "../../../assets/images/icons/instagram.png",
+        "url": "https://www.facebook.com/?locale=es_ES",
+        "alt": "instagram"
+      },
+      {
+        "img": "../../../assets/images/icons/linkedin.png",
+        "url": "https://www.facebook.com/?locale=es_ES",
+        "alt": "linkedin"
+      },
+      {
+        "img": "../../../assets/images/icons/telegram.png",
+        "url": "https://www.facebook.com/?locale=es_ES",
+        "alt": "telegram"
+      },
+      {
+        "img": "../../../assets/images/icons/tiktok.png",
+        "url": "https://www.facebook.com/?locale=es_ES",
+        "alt": "tiktok"
+      },
+      {
+        "img": "../../../assets/images/icons/twitter.png",
+        "url": "https://www.facebook.com/?locale=es_ES",
+        "alt": "twitter"
+      },
+      {
+        "img": "../../../assets/images/icons/whatsapp.png",
+        "url": "https://www.facebook.com/?locale=es_ES",
+        "alt": "whatsapp"
+      },
+      {
+        "img": "../../../assets/images/icons/youtube.png",
+        "url": "https://www.facebook.com/?locale=es_ES",
+        "alt": "youtube"
+      }
+    ],
+    "logo_url": "../../../assets/images/logograndesf.png",
+    "logo_alt": "",
+    "menu":
+    [
+      {
+        "text": "Contacto",
+        "url": "#"
+      },
+      {
+        "text": "About",
+        "url": "#"
+      },
+      {
+        "text": "Política de privacidad",
+        "url": "#"
+      }
+    ]
+  }
+
+}
