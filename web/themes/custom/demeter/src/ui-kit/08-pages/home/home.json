@@ -1,15 +1,15 @@
 {
-
   "hero": {
-    "type": "component-blocks/hero",
+    "type": "component-blocks/paragraph-hero",
     "data": {
-
+      "img_url": "../../../assets/images/recetify-hero.png",
+      "entradilla_text": "Llega el invierno! Tiempo de sopas, caldos y una gran variedad de platos calientes... Descúbrelos!",
+      "cta": {
+        "text": "Recetas de invierno",
+        "url": "loquesea"
+      }
     }
   },
-
-
-
-
   "header": {
     "logo_url": "../../../assets/images/logogrande2.png",
     "logo_alt": "",
