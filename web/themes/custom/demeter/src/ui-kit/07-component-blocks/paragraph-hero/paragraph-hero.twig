@@ -6,8 +6,8 @@
     <div class="cb-{{ componentName }}__entradilla">
       {{ entradilla_text }}
     </div>
-    <a href="{{ cta.url }}" class="cb-{{ componentName }}__cta">
-      {{ cta.text }}
-    </a>
+    <div class="cb-{{ componentName }}__bottom">
+      {{ button|render }}
+    </div>
 
 {% endblock %}
