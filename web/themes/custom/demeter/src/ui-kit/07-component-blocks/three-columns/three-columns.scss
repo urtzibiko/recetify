@@ -1,0 +1,12 @@
+.cb-three-columns {
+  &__snippet_area {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-bottom: 50px;
+  }
+  &__button_area {
+    display: flex;
+    justify-content: center;
+  }
+}
