@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "text" : "Portada",
+      "url" : "loquesea"
+    },
+    {
+      "text" : "Recetas",
+      "url" : "loquesea"
+    },
+    {
+      "text" : "Masas",
+      "url" : "loquesea"
+    },
+    {
+      "text" : "Noticias",
+      "url" : "loquesea"
+    }
+  ]
+}

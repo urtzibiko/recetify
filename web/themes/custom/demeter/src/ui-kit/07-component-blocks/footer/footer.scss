@@ -1,0 +1,52 @@
+.cb-footer {
+  display: grid;
+  height: 200px;
+  background-color: $green-l;
+  border-top: 20px solid $green-d;
+  font-family: 'Poppins', sans-serif;
+
+  &__rss {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    margin: auto;
+  }
+
+  &__logo {
+    grid-column: 2;
+    margin: auto;
+    img {
+      max-height: 150px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    grid-column: 3;
+  }
+
+  &__menu-item {
+    padding: 10px;
+    color: $green-d;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+    &:hover {
+      transform: scale(1.3);
+      transform-origin: left;
+      text-decoration: underline;
+    }
+  }
+
+  &__rss-icon {
+    padding: 10px;
+    img{
+      max-height: 40px;
+      transition: all .25s ease-in-out;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+}

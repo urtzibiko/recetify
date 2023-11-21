@@ -1,1 +1,10 @@
-HEADER
+{% extends '@component-blocks/component-block.twig' %}
+{% set componentName = 'header' %}
+{% block content %}
+  <div class="cb-{{ componentName }}__logo">
+    <img src="{{ logo_url }}" alt="{{ logo_alt }}" />
+  </div>
+  <div class="cb-{{ componentName }}__right">
+    {{ menu|render }}
+  </div>
+{% endblock %}

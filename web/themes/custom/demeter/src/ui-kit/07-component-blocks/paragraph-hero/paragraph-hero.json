@@ -1,0 +1,15 @@
+{
+  "img_url": "../../../assets/images/recetify-hero.png",
+  "entradilla_text": "Llega el invierno! Tiempo de sopas, caldos y una gran variedad de platos calientes... Descúbrelos!",
+  "button": {
+    "type": "components/button",
+    "data": {
+      "text": "Recetas de invierno",
+      "url": "loquesea"
+    }
+  }
+}
+
+
+
+

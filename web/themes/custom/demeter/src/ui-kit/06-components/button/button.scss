@@ -1,0 +1,16 @@
+.c-button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding: 10px 40px;
+  border-radius: 50px;
+  position: absolute;
+  background-color: $green-d;
+  color: $white;
+  text-decoration: none;
+  transition: all .25s ease-in-out;;
+  &:hover{
+    text-decoration: underline;
+    transform-origin: left top;
+    scale: 1.1;
+  }
+}

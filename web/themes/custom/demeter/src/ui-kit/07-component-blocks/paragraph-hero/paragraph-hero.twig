@@ -1,0 +1,13 @@
+{% extends '@component-blocks/component-block.twig' %}
+{% set componentName = 'paragraph-hero' %}
+{% block content %}
+
+    <img class= "cb-{{ componentName }}__bg-image" src="{{ img_url }}"/>
+    <div class="cb-{{ componentName }}__entradilla">
+      {{ entradilla_text }}
+    </div>
+    <div class="cb-{{ componentName }}__bottom">
+      {{ button|render }}
+    </div>
+
+{% endblock %}
