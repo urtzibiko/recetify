@@ -12,7 +12,7 @@ module.exports = function (gulp, plugins, options) {
       'compile:sass',
       'compile:js',
       'compile:vendorjs',
-      // 'images',
+      'images',
       'fonts',
       'twigPages',
       'svg',
