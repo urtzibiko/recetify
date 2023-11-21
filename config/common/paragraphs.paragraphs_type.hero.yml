@@ -1,0 +1,10 @@
+uuid: d743c943-1376-4098-beca-e8ab186a50b9
+langcode: es
+status: true
+dependencies: {  }
+id: hero
+label: Hero
+icon_uuid: null
+icon_default: null
+description: 'Paragraph único para el hero'
+behavior_plugins: {  }

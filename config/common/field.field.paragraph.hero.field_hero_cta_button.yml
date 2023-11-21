@@ -1,0 +1,23 @@
+uuid: f5891cb9-e3c7-4ea5-a161-957a233b682a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_cta_button
+    - paragraphs.paragraphs_type.hero
+  module:
+    - link
+id: paragraph.hero.field_hero_cta_button
+field_name: field_hero_cta_button
+entity_type: paragraph
+bundle: hero
+label: 'hero cta button'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 1
+field_type: link
