@@ -3,14 +3,14 @@
   font-weight: bold;
   padding: 10px 40px;
   border-radius: 50px;
-  position: absolute;
+  position: relative;
   background-color: $green-d;
   color: $white;
   text-decoration: none;
-  transition: all .25s ease-in-out;;
+  transition: transform .25s ease-in-out;;
   &:hover{
     text-decoration: underline;
-    transform-origin: left top;
-    scale: 1.1;
+    transform-origin: center;
+    transform: scale(1.1);
   }
 }
