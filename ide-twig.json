@@ -1,0 +1,21 @@
+{
+  "namespaces": [
+    {
+      "namespace": "base",
+      "path": "web/themes/custom/demeter/src/ui-kit/00-base/twigs"
+    },
+    {
+      "namespace": "components",
+      "path": "web/themes/custom/demeter/src/ui-kit/06-components"
+    },
+    {
+      "namespace": "component-blocks",
+      "path": "web/themes/custom/demeter/src/ui-kit/07-component-blocks"
+    },
+    {
+      "namespace": "pages",
+      "path": "web/themes/custom/demeter/src/ui-kit/08-pages"
+    }
+
+  ]
+}
