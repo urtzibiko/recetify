@@ -1,6 +1,6 @@
 uuid: 7e8afc90-d3fd-4f49-8588-c210df330ebb
 langcode: es
-status: false
+status: true
 dependencies:
   theme:
     - demeter
@@ -9,7 +9,7 @@ _core:
 id: demeter_primary_local_tasks
 theme: demeter
 region: header
-weight: 0
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:
