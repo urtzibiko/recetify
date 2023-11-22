@@ -1,0 +1,27 @@
+.cb-snippet-info {
+  font-family: 'Poppins', sans-serif;
+  background-color: $green-l;
+  border: 3px solid $green-d;
+  color: black;
+  border-radius: 30px;
+  display: flex;
+  padding: 30px;
+  max-width: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 20px;
+  &__txt-area {
+    display: flex;
+    width: 80%;
+    align-items: center;
+  }
+  &__img-area {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    img {
+      max-height: 150px;
+    }
+  }
+}
