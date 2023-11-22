@@ -2,12 +2,12 @@
 {% set componentName = 'three-columns' %}
 {% block content %}
   <h2 class="cb-{{ componentName }}__title">{{ title }}</h2>
-  <div class="cb-{{ componentName }}__snippet-area">
+  <div class="cb-{{ componentName }}__snippet_area">
   {% for item in snippets %}
-    {{ item|render }}
+    {{ item|render_dto }}
   {% endfor %}
   </div>
-  <div class="cb-{{ componentName }}__button-area">
-    {{ button|render }}
+  <div class="cb-{{ componentName }}__button_area">
+    {{ button|render_dto }}
   </div>
 {% endblock %}
