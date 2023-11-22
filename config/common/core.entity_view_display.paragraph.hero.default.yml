@@ -9,7 +9,6 @@ dependencies:
     - paragraphs.paragraphs_type.hero
   module:
     - field_layout
-    - image
     - layout_discovery
     - link
     - text
@@ -24,15 +23,13 @@ bundle: hero
 mode: default
 content:
   field_hero_bg_image:
-    type: image
+    type: entity_reference_entity_view
     label: above
     settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
+      view_mode: default
+      link: false
     third_party_settings: {  }
-    weight: 0
+    weight: 4
     region: content
   field_hero_cta_button:
     type: link
