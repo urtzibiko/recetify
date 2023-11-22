@@ -2,13 +2,13 @@
 {% set componentName = 'four-columns' %}
 {% block content %}
   <div class="cb-{{ componentName }}__snippet-area">
-    <div class="row">
+    <div class="cb-{{ componentName }}__snippet-area__row">
       {% for item in snippets %}
       {{ item|render }}
       {% if loop.index is divisible by(4) or loop.last %}
     </div>
     {% if not loop.last %}
-    <div class="row">
+    <div class="cb-{{ componentName }}__snippet-area__row">
       {% endif %}
       {% endif %}
       {% endfor %}
