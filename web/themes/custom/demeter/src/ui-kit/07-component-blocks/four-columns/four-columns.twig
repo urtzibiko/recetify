@@ -1,15 +1,14 @@
 {% extends '@component-blocks/component-block.twig' %}
 {% set componentName = 'four-columns' %}
 {% block content %}
-  <h2 class="cb-{{ componentName }}__title">{{ title }}</h2>
   <div class="cb-{{ componentName }}__snippet-area">
-    <div class="cb-{{ componentName }}__snippet-area__row">
+    <div class="row">
       {% for item in snippets %}
       {{ item|render }}
       {% if loop.index is divisible by(4) or loop.last %}
     </div>
     {% if not loop.last %}
-    <div class="cb-{{ componentName }}__snippet-area__row">
+    <div class="row">
       {% endif %}
       {% endif %}
       {% endfor %}

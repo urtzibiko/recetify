@@ -1,8 +1,7 @@
 {
-  "title": "Categorías",
   "snippets": [
     {
-      "type": "component-blocks/snippet-imgtxt",
+      "type": "component-blocks/imgtxt-snippet",
       "data":
       {
         "imgsrc": "../../../assets/images/gyozas.png",
@@ -12,7 +11,7 @@
       }
     },
     {
-      "type": "component-blocks/snippet-imgtxt",
+      "type": "component-blocks/imgtxt-snippet",
       "data":
       {
         "imgsrc": "../../../assets/images/gyozas.png",
@@ -22,7 +21,7 @@
       }
     },
     {
-      "type": "component-blocks/snippet-imgtxt",
+      "type": "component-blocks/imgtxt-snippet",
       "data":
       {
         "imgsrc": "../../../assets/images/gyozas.png",
@@ -32,7 +31,7 @@
       }
     },
     {
-      "type": "component-blocks/snippet-imgtxt",
+      "type": "component-blocks/imgtxt-snippet",
       "data":
       {
         "imgsrc": "../../../assets/images/gyozas.png",
@@ -42,7 +41,7 @@
       }
     },
     {
-      "type": "component-blocks/snippet-imgtxt",
+      "type": "component-blocks/imgtxt-snippet",
       "data":
       {
         "imgsrc": "../../../assets/images/gyozas.png",
@@ -52,7 +51,7 @@
       }
     },
     {
-      "type": "component-blocks/snippet-imgtxt",
+      "type": "component-blocks/imgtxt-snippet",
       "data":
       {
         "imgsrc": "../../../assets/images/gyozas.png",
@@ -62,7 +61,7 @@
       }
     },
     {
-      "type": "component-blocks/snippet-imgtxt",
+      "type": "component-blocks/imgtxt-snippet",
       "data":
       {
         "imgsrc": "../../../assets/images/gyozas.png",
