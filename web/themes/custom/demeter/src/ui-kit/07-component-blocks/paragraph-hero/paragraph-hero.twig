@@ -3,13 +3,13 @@
 {% block content %}
 
     <div class= "cb-{{ componentName }}__background-image">
-      {{ image|render }}
+      {{ image|render_dto }}
     </div>
     <div class="cb-{{ componentName }}__teaser">
-      {{ teaser }}
+      {{ teaser|raw }}
     </div>
     <div class="cb-{{ componentName }}__bottom">
-      {{ button|render }}
+      {{ button|render_dto }}
     </div>
 
 {% endblock %}

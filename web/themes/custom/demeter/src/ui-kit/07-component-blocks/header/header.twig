@@ -2,9 +2,9 @@
 {% set componentName = 'header' %}
 {% block content %}
   <div class="cb-{{ componentName }}__logo">
-    {{ logo|render }}
+    {{ logo|render_dto }}
   </div>
   <div class="cb-{{ componentName }}__right">
-    {{ menu|render }}
+    {{ menu|render_dto }}
   </div>
 {% endblock %}
