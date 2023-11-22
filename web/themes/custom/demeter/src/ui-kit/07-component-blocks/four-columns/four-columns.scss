@@ -3,18 +3,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     padding-bottom: 50px;
+    &__row {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0px;
+    }
   }
   &__button-area {
     display: flex;
     justify-content: center;
   }
-  &__row {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0px;
-  }
+
 }
 
