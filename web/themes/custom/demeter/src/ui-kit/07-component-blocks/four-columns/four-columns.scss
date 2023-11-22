@@ -1,0 +1,20 @@
+.cb-four-columns {
+  &__snippet-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding-bottom: 50px;
+  }
+  &__button-area {
+    display: flex;
+    justify-content: center;
+  }
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+}
+
