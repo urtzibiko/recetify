@@ -1,4 +1,24 @@
 .cb-three-columns {
+  max-width: 100%;
+  font-family: 'Poppins', sans-serif;
+  &__title {
+    color: $green-d;
+    font-size: 2em;
+    overflow: hidden;
+    &:before, &:after {
+      margin: 5px;
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 50px;
+      height: 3px;
+      border-top: 3px solid $green-d;
+    }
+    &:after {
+      width:100%;
+      margin-right: -100%;
+    }
+  }
   &__snippet_area {
     display: flex;
     justify-content: center;

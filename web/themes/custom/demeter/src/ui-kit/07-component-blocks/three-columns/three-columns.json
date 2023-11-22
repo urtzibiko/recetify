@@ -1,4 +1,5 @@
 {
+  "title": "Recetas destacadas",
   "snippets": [
     {
     "type": "component-blocks/imgtxt-snippet",
@@ -34,7 +35,7 @@
   "button": {
     "type": "components/button",
     "data": {
-      "text": "Ver recetas destacadas",
+      "text": "Ver más recetas destacadas",
       "url": "#"
     }
   }
