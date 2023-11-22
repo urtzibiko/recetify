@@ -1,0 +1,41 @@
+{
+  "snippets": [
+    {
+    "type": "component-blocks/imgtxt-snippet",
+    "data":
+      {
+        "imgsrc": "../../../assets/images/gyozas.png",
+        "alt": "Crema de calabacín",
+        "text": "Crema de calabacín",
+        "url": "#"
+      }
+    },
+    {
+      "type": "component-blocks/imgtxt-snippet",
+      "data":
+      {
+        "imgsrc": "../../../assets/images/gyozas.png",
+        "alt": "Crema de calabacín",
+        "text": "Crema de calabacín",
+        "url": "#"
+      }
+    },
+    {
+      "type": "component-blocks/imgtxt-snippet",
+      "data":
+      {
+        "imgsrc": "../../../assets/images/gyozas.png",
+        "alt": "Crema de calabacín",
+        "text": "Crema de calabacín",
+        "url": "#"
+      }
+    }
+  ],
+  "button": {
+    "type": "components/button",
+    "data": {
+      "text": "Ver recetas destacadas",
+      "url": "#"
+    }
+  }
+}

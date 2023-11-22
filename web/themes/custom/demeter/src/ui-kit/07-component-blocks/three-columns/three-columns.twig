@@ -1,0 +1,12 @@
+{% extends '@component-blocks/component-block.twig' %}
+{% set componentName = 'three-columns' %}
+{% block content %}
+  <div class="cb-{{ componentName }}__snippet_area">
+  {% for item in snippets %}
+    {{ item|render }}
+  {% endfor %}
+  </div>
+  <div class="cb-{{ componentName }}__button_area">
+    {{ button|render }}
+  </div>
+{% endblock %}

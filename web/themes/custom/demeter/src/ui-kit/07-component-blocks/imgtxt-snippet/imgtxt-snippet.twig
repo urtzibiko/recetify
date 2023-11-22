@@ -1,0 +1,12 @@
+{% extends '@component-blocks/component-block.twig' %}
+{% set componentName = 'imgtxt-snippet' %}
+{% block content %}
+  <a href="{{ url }}" class="cb-{{ componentName }}__img">
+    <img src="{{ imgsrc }}" alt="{{ alt }}"/>
+  </a>
+
+    <a href="{{ url }}" class="cb-{{ componentName }}__txt">
+      {{ text }}
+    </a>
+
+{% endblock %}
