@@ -1,0 +1,177 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for recetify_content module.
+ */
+
+use Drupal\Core\Menu\MenuTreeParameters;
+use Drupal\recetify_content\ThemeDto\Component\ButtonDto;
+use Drupal\recetify_content\ThemeDto\Component\ImageDto;
+use Drupal\recetify_content\ThemeDto\ComponentBlock\FooterDto;
+use Drupal\recetify_content\ThemeDto\ComponentBlock\HeaderDto;
+use Drupal\recetify_content\ThemeDto\ComponentBlock\HeaderMenuDto;
+use Drupal\recetify_content\ThemeDto\ComponentBlock\HeaderMenuItem;
+use Drupal\recetify_content\ThemeDto\Page\HomePageDto;
+use Drupal\recetify_content\ThemeDto\ComponentBlock\ParagraphHeroDto;
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function recetify_content_preprocess_node(&$variables): void {
+
+  /** @var \Drupal\Core\File\FileUrlGeneratorInterface $fileUrlGenerator */
+  $fileUrlGenerator = \Drupal::service('file_url_generator');
+
+  /** @var \Drupal\Core\Render\RendererInterface $renderer */
+  $renderer = \Drupal::service('renderer');
+
+  /** @var \Drupal\node\NodeInterface $node */
+  $node = $variables['node'];
+
+  $viewMode = $variables['view_mode'];
+
+  if ($viewMode == 'full') {
+
+    if ($node->bundle() === 'home') {
+
+      $dto = new HomePageDto();
+      $dto->header = _recetify_get_header_dto($variables);
+      $dto->footer = _recetify_get_footer_dto($variables);
+
+      // Hero.
+      /** @var \Drupal\paragraphs\ParagraphInterface $paragraphHero */
+      if ($paragraphHero = $node->get('field_hero')->entity) {
+        $paragraphHeroDto = new ParagraphHeroDto();
+
+        // Image.
+        if (
+          ($imageMedia = $paragraphHero->get('field_hero_bg_image')->entity)
+          && ($fileUri = $imageMedia->get('field_media_image')->entity->getFileUri())
+        ) {
+          $imageDto = new ImageDto();
+          $imageDto->src = $fileUrlGenerator->generateString($fileUri);
+          $imageDto->alt = $imageMedia->alt ?? '';
+          $paragraphHeroDto->image = $imageDto;
+        }
+
+        // CTA.
+        if ($linkFieldItem = $paragraphHero->get('field_hero_cta_button')
+          ->first()) {
+          $buttonDto = new ButtonDto();
+          $buttonDto->text = $linkFieldItem->getTitle();
+          $buttonDto->url = $linkFieldItem->getUrl()->toString();
+          $paragraphHeroDto->button = $buttonDto;
+        }
+
+        // Teaser.
+        if ($teaserFieldItem = $paragraphHero->get('field_hero_opening_text')->first()) {
+          $teaserBuild = $teaserFieldItem->view($viewMode);
+          $paragraphHeroDto->teaser =$renderer->render($teaserBuild);
+        }
+
+        $dto->hero = $paragraphHeroDto;
+      }
+
+    }
+
+    if (!empty($dto)) {
+      $variables['dto'] = (array) json_decode(json_encode($dto->jsonSerialize()), TRUE);
+    }
+
+  }
+
+}
+
+function _recetify_get_header_dto($variables): HeaderDto {
+
+  $headerDto = new HeaderDto();
+  $headerDto->logo = _recetify_get_header_logo_dto($variables);
+  $headerDto->menu = _recetify_get_header_menu_dto($variables);
+
+  return $headerDto;
+
+}
+
+function _recetify_get_header_logo_dto($variables): ImageDto {
+
+  $imageDto = new ImageDto();
+  $imageDto->src = _recetify_get_asset_path('images/logogrande2.png');
+  $imageDto->alt = "Logo";
+
+  return $imageDto;
+
+}
+
+function _recetify_get_header_menu_dto($variables): HeaderMenuDto {
+
+  /** @var \Drupal\Core\Menu\MenuTreeStorageInterface $menuTree */
+  $menuTree = \Drupal::service('toolbar.menu_tree');
+
+  $parameters = new MenuTreeParameters();
+  $parameters->setMinDepth(1)->setMaxDepth(1)->onlyEnabledLinks();
+
+  $headerMenuItems = [];
+  foreach ($menuTree->load('main', $parameters) as $element) {
+
+    /** @var \Drupal\Core\Menu\MenuLinkInterface $link */
+    $link = $element->link;
+
+    $headerMenuItem = new HeaderMenuItem();
+    $headerMenuItem->text = $link->getTitle();
+    $headerMenuItem->url = $link->getUrlObject()->toString();
+
+    $headerMenuItems[] = $headerMenuItem;
+
+  }
+
+  $headerMenuDto = new HeaderMenuDto();
+  $headerMenuDto->items = $headerMenuItems;
+
+  return $headerMenuDto;
+
+}
+
+function _recetify_get_footer_dto($variables): FooterDto {
+
+  $footerDto = new FooterDto();
+
+  // Icons.
+  $footerDto->icons = [
+    [
+      'img' => _recetify_get_asset_path('images/icons/facebook.png'),
+      'url' => 'https://www.facebook.com/?locale=es_ES',
+      'alt' => 'facebook'
+    ],
+    [
+      'img' => _recetify_get_asset_path('images/icons/instagram.png'),
+      'url' => 'https://www.facebook.com/?locale=es_ES',
+      'alt' => 'instagram'
+    ],
+  ];
+
+  // Logo.
+  $footerLogoDto = new ImageDto();
+  $footerLogoDto->src = _recetify_get_asset_path('images/logograndesf.png');
+  $footerLogoDto->alt = 'Logo Recetify';
+  $footerDto->logo = $footerLogoDto;
+
+  // Menu.
+  $footerDto->menu = [
+    [
+      "text" => "Enlace 1",
+      "url" => "https://www.google.es",
+    ],
+    [
+      "text" => "Enlace 2",
+      "url" => "https://www.google.es",
+    ]
+  ];
+
+  return $footerDto;
+
+}
+
+function _recetify_get_asset_path($assetPath): string {
+  return '/' . \Drupal::theme()->getActiveTheme()->getPath() . '/build/assets/' . $assetPath;
+}

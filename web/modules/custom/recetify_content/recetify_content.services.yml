@@ -1,0 +1,9 @@
+services:
+
+  recetify_content.twig_extension:
+    class: Drupal\recetify_content\TwigExtension
+    arguments: ['@renderer', '@url_generator', '@theme.manager', '@date.formatter', '@file_url_generator']
+    # Es imprescindible darle una prioridad mayor de 100
+    # para permitir que Drupal cargue antes su propia extensión de Twig
+    tags:
+      - { name: twig.extension, priority: 110 }
