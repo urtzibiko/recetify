@@ -6,6 +6,7 @@
  */
 
 use Drupal\Core\Menu\MenuTreeParameters;
+use Drupal\image\Entity\ImageStyle;
 use Drupal\recetify_content\ThemeDto\Component\ButtonDto;
 use Drupal\recetify_content\ThemeDto\Component\ImageDto;
 use Drupal\recetify_content\ThemeDto\ComponentBlock\FooterDto;
@@ -49,8 +50,9 @@ function recetify_content_preprocess_node(&$variables): void {
           ($imageMedia = $paragraphHero->get('field_hero_bg_image')->entity)
           && ($fileUri = $imageMedia->get('field_media_image')->entity->getFileUri())
         ) {
+
           $imageDto = new ImageDto();
-          $imageDto->src = $fileUrlGenerator->generateString($fileUri);
+          $imageDto->src = ImageStyle::load('16x9_large')->buildUrl($fileUri);
           $imageDto->alt = $imageMedia->alt ?? '';
           $paragraphHeroDto->image = $imageDto;
         }
