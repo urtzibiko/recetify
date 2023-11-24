@@ -7,7 +7,7 @@
       <div class="d-flex flex-column">
         <br>
         <h2>Compound example completely received via a DTO</h2>
-        {{ compoundExample|render }}
+        {{ compoundExample|render_dto }}
         <br>
         <br>
         <h2>Just-in-time created component</h2>
@@ -17,7 +17,7 @@
             src: 'https://via.placeholder.com/300',
             alt: 'Just-in-time created component'
           }
-        }|render }}
+        }|render_dto }}
         <br>
         <br>
         {{ {
@@ -32,7 +32,7 @@
               }
             }
           }
-        }|render }}
+        }|render_dto }}
         <br>
         <br>
       </div>

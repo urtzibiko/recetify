@@ -41,8 +41,13 @@
       "alt": "youtube"
     }
   ],
-  "logo_url": "../../../assets/images/logograndesf.png",
-  "logo_alt": "",
+  "logo": {
+    "type": "components/image",
+    "data": {
+      "src": "../../../assets/images/logograndesf.png",
+      "alt": "Logo Recetify"
+    }
+  },
   "menu":
     [
       {

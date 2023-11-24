@@ -1,6 +1,11 @@
 {
-  "logo_url": "../../../assets/images/logogrande2.png",
-  "logo_alt": "",
+  "logo": {
+    "type": "components/image",
+    "data": {
+      "src": "../../../assets/images/logogrande2.png",
+      "alt": "Verduras de la temporada de invierno"
+    }
+  },
   "menu": {
     "type": "component-blocks/header-menu",
     "data": {

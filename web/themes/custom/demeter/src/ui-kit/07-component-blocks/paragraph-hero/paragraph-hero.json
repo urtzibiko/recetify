@@ -1,6 +1,12 @@
 {
-  "img_url": "../../../assets/images/recetify-hero.png",
-  "entradilla_text": "Llega el invierno! Tiempo de sopas, caldos y una gran variedad de platos calientes... Descúbrelos!",
+  "image": {
+    "type": "components/image",
+    "data": {
+      "src": "../../../assets/images/recetify-hero.png",
+      "alt": "Verduras de la temporada de invierno"
+    }
+  },
+  "teaser": "Llega el invierno! Tiempo de sopas, caldos y una gran variedad de platos calientes... Descúbrelos!",
   "button": {
     "type": "components/button",
     "data": {

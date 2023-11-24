@@ -2,12 +2,14 @@
 {% set componentName = 'paragraph-hero' %}
 {% block content %}
 
-    <img class= "cb-{{ componentName }}__bg-image" src="{{ img_url }}"/>
-    <div class="cb-{{ componentName }}__entradilla">
-      {{ entradilla_text }}
+    <div class= "cb-{{ componentName }}__background-image">
+      {{ image|render_dto }}
+    </div>
+    <div class="cb-{{ componentName }}__teaser">
+      {{ teaser|raw }}
     </div>
     <div class="cb-{{ componentName }}__bottom">
-      {{ button|render }}
+      {{ button|render_dto }}
     </div>
 
 {% endblock %}

@@ -37,7 +37,7 @@ twigFilters.push({
 });
 
 twigFilters.push({
-  name:'render',
+  name:'render_dto',
   func: function(input) {
 
     const namespaces = this.template.options.namespaces;

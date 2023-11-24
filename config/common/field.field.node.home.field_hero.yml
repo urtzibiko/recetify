@@ -1,0 +1,34 @@
+uuid: b57feaa2-970b-4b8b-80a3-0b399c7841ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero
+    - node.type.home
+    - paragraphs.paragraphs_type.hero
+  module:
+    - entity_reference_revisions
+id: node.home.field_hero
+field_name: field_hero
+entity_type: node
+bundle: home
+label: Hero
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      hero: hero
+    negate: 0
+    target_bundles_drag_drop:
+      hero:
+        weight: 3
+        enabled: true
+      promoted_recipes:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions
