@@ -15,7 +15,7 @@
 
   {# Logo #}
   <div class="cb-{{ componentName }}__logo">
-    <img src="{{ logo_url }}" alt="{{ logo_alt }}" />
+    {{ logo|render_dto }}
   </div>
 
   {# Menu #}

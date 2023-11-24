@@ -6,13 +6,12 @@ dependencies:
     - field.field.paragraph.hero.field_hero_bg_image
     - field.field.paragraph.hero.field_hero_cta_button
     - field.field.paragraph.hero.field_hero_opening_text
-    - image.style.thumbnail
     - paragraphs.paragraphs_type.hero
   module:
     - field_layout
-    - image
     - layout_discovery
     - link
+    - media_library
     - text
 third_party_settings:
   field_layout:
@@ -25,12 +24,11 @@ bundle: hero
 mode: default
 content:
   field_hero_bg_image:
-    type: image_image
-    weight: 0
+    type: media_library_widget
+    weight: 4
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      media_types: {  }
     third_party_settings: {  }
   field_hero_cta_button:
     type: link_default

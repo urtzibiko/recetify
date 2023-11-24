@@ -2,8 +2,14 @@
   "hero": {
     "type": "component-blocks/paragraph-hero",
     "data": {
-      "img_url": "../../../assets/images/recetify-hero.png",
-      "entradilla_text": "Llega el invierno! Tiempo de sopas, caldos y una gran variedad de platos calientes... Descúbrelos!",
+      "image": {
+        "type": "components/image",
+        "data": {
+          "src": "../../../assets/images/recetify-hero.png",
+          "alt": "Verduras de la temporada de invierno"
+        }
+      },
+      "teaser": "Llega el invierno! Tiempo de sopas, caldos y una gran variedad de platos calientes... Descúbrelos!",
       "button": {
         "type": "components/button",
         "data": {
@@ -15,8 +21,13 @@
   },
   "paragraphs": [],
   "header": {
-    "logo_url": "../../../assets/images/logogrande2.png",
-    "logo_alt": "",
+    "logo": {
+      "type": "components/image",
+      "data": {
+        "src": "../../../assets/images/logogrande2.png",
+        "alt": "Verduras de la temporada de invierno"
+      }
+    },
     "menu": {
       "type": "component-blocks/header-menu",
       "data": {
@@ -84,10 +95,14 @@
         "alt": "youtube"
       }
     ],
-    "logo_url": "../../../assets/images/logograndesf.png",
-    "logo_alt": "",
-    "menu":
-    [
+    "logo": {
+      "type": "components/image",
+      "data": {
+        "src": "../../../assets/images/logograndesf.png",
+        "alt": "Verduras de la temporada de invierno"
+      }
+    },
+    "menu": [
       {
         "text": "Contacto",
         "url": "#"
@@ -102,5 +117,4 @@
       }
     ]
   }
-
 }

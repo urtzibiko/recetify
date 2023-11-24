@@ -9,7 +9,7 @@ dependencies:
 id: demeter_alternadordeidioma_2
 theme: demeter
 region: header
-weight: -6
+weight: -8
 provider: null
 plugin: 'language_block:language_interface'
 settings:

@@ -5,7 +5,7 @@
   <div{% if pageName %} class="{{ 'p-' ~ pageName }}{{ pageModifiers ? ' ' ~ 'p-' ~ pageName ~ '--' ~ pageModifiers|join(' ' ~ 'p-' ~ pageName ~ '--') }}"{% endif %}>
 
     {% block header %}
-      {% include '@component-blocks/header/header.twig' with header %}
+      {{ header|render_dto }}
     {% endblock %}
 
     {% block page %}
@@ -14,7 +14,7 @@
     {% endblock %}
 
     {% block footer %}
-      {% include '@component-blocks/footer/footer.twig' with footer %}
+      {{ footer|render_dto }}
     {% endblock %}
 
   </div>

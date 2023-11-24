@@ -1,0 +1,5 @@
+name: 'Recetify content'
+type: module
+description: 'Preprocesses content to be sent to custom theme'
+package: Custom
+core_version_requirement: ^10
