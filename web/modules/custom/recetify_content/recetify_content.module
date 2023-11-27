@@ -143,13 +143,43 @@ function _recetify_get_footer_dto($variables): FooterDto {
     [
       'img' => _recetify_get_asset_path('images/icons/facebook.png'),
       'url' => 'https://www.facebook.com/?locale=es_ES',
-      'alt' => 'facebook'
+      'alt' => 'Facebook'
     ],
     [
       'img' => _recetify_get_asset_path('images/icons/instagram.png'),
-      'url' => 'https://www.facebook.com/?locale=es_ES',
-      'alt' => 'instagram'
+      'url' => 'https://www.instagram.com/',
+      'alt' => 'Instagram'
     ],
+    [
+      'img' => _recetify_get_asset_path('images/icons/linkedin.png'),
+      'url' => 'https://es.linkedin.com/',
+      'alt' => 'LinkedIn'
+    ],
+    [
+      'img' => _recetify_get_asset_path('images/icons/telegram.png'),
+      'url' => 'https://web.telegram.org',
+      'alt' => 'Telegram'
+    ],
+    [
+      'img' => _recetify_get_asset_path('images/icons/tiktok.png'),
+      'url' => 'https://www.tiktok.com/es/',
+      'alt' => 'TikTok'
+    ],
+    [
+      'img' => _recetify_get_asset_path('images/icons/twitter.png'),
+      'url' => 'https://twitter.com/?lang=es',
+      'alt' => 'Twitter'
+    ],
+    [
+      'img' => _recetify_get_asset_path('images/icons/whatsapp.png'),
+      'url' => 'https://www.whatsapp.com/?lang=es_LA',
+      'alt' => 'Whatsapp'
+    ],
+    [
+      'img' => _recetify_get_asset_path('images/icons/youtube.png'),
+      'url' => 'https://www.youtube.com/whatsap',
+      'alt' => 'Youtube'
+    ]
   ];
 
   // Logo.
@@ -161,11 +191,15 @@ function _recetify_get_footer_dto($variables): FooterDto {
   // Menu.
   $footerDto->menu = [
     [
-      "text" => "Enlace 1",
+      "text" => "Contacto",
       "url" => "https://www.google.es",
     ],
     [
-      "text" => "Enlace 2",
+      "text" => "About",
+      "url" => "https://www.google.es",
+    ],
+    [
+      "text" => "Política de privacidad",
       "url" => "https://www.google.es",
     ]
   ];
