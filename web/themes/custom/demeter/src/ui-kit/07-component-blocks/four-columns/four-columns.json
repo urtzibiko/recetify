@@ -1,0 +1,82 @@
+{
+  "title": "Categorías",
+  "snippets": [
+    {
+      "type": "component-blocks/snippet-imgtxt",
+      "data":
+      {
+        "imgsrc": "../../../assets/images/gyozas.png",
+        "alt": "Crema de calabacín",
+        "text": "Crema de calabacín",
+        "url": "#"
+      }
+    },
+    {
+      "type": "component-blocks/snippet-imgtxt",
+      "data":
+      {
+        "imgsrc": "../../../assets/images/gyozas.png",
+        "alt": "Crema de calabacín",
+        "text": "Crema de calabacín",
+        "url": "#"
+      }
+    },
+    {
+      "type": "component-blocks/snippet-imgtxt",
+      "data":
+      {
+        "imgsrc": "../../../assets/images/gyozas.png",
+        "alt": "Crema de calabacín",
+        "text": "Crema de calabacín",
+        "url": "#"
+      }
+    },
+    {
+      "type": "component-blocks/snippet-imgtxt",
+      "data":
+      {
+        "imgsrc": "../../../assets/images/gyozas.png",
+        "alt": "Crema de calabacín",
+        "text": "Crema de calabacín",
+        "url": "#"
+      }
+    },
+    {
+      "type": "component-blocks/snippet-imgtxt",
+      "data":
+      {
+        "imgsrc": "../../../assets/images/gyozas.png",
+        "alt": "Crema de calabacín",
+        "text": "Crema de calabacín",
+        "url": "#"
+      }
+    },
+    {
+      "type": "component-blocks/snippet-imgtxt",
+      "data":
+      {
+        "imgsrc": "../../../assets/images/gyozas.png",
+        "alt": "Crema de calabacín",
+        "text": "Crema de calabacín",
+        "url": "#"
+      }
+    },
+    {
+      "type": "component-blocks/snippet-imgtxt",
+      "data":
+      {
+        "imgsrc": "../../../assets/images/gyozas.png",
+        "alt": "Crema de calabacín",
+        "text": "Crema de calabacín",
+        "url": "#"
+      }
+    }
+  ],
+  "button": {
+    "type": "components/button",
+    "data": {
+      "text": "Ver categorías",
+      "url": "#"
+    }
+  }
+}

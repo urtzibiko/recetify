@@ -4,11 +4,11 @@ langcode: es
 uuid: 7d9a17a8-1a3f-490f-ba59-0d7470287fee
 name: Recetify
 mail: admin@example.com
-slogan: ''
+slogan: 'Un eslogan para recetify'
 page:
   403: ''
   404: ''
-  front: /node/2
+  front: /node/3
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: es

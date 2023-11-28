@@ -1,7 +1,8 @@
 {
+  "title": "Recetas destacadas",
   "snippets": [
     {
-    "type": "component-blocks/imgtxt-snippet",
+    "type": "component-blocks/snippet-imgtxt",
     "data":
       {
         "imgsrc": "../../../assets/images/gyozas.png",
@@ -11,7 +12,7 @@
       }
     },
     {
-      "type": "component-blocks/imgtxt-snippet",
+      "type": "component-blocks/snippet-imgtxt",
       "data":
       {
         "imgsrc": "../../../assets/images/gyozas.png",
@@ -21,7 +22,7 @@
       }
     },
     {
-      "type": "component-blocks/imgtxt-snippet",
+      "type": "component-blocks/snippet-imgtxt",
       "data":
       {
         "imgsrc": "../../../assets/images/gyozas.png",
@@ -34,7 +35,7 @@
   "button": {
     "type": "components/button",
     "data": {
-      "text": "Ver recetas destacadas",
+      "text": "Ver más recetas destacadas",
       "url": "#"
     }
   }

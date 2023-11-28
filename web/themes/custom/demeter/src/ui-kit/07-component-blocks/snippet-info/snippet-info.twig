@@ -1,0 +1,10 @@
+{% extends '@component-blocks/component-block.twig' %}
+{% set componentName = 'snippet-info' %}
+{% block content %}
+  <div class="cb-{{ componentName }}__txt-area">
+      {{ text }}
+  </div>
+  <div class="cb-{{ componentName }}__img-area">
+    <img src="{{ imgsrc }}" alt="{{ alt }}"></div>
+  </div>
+{% endblock %}

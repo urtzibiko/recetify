@@ -11,6 +11,7 @@ dependencies:
     - field_layout
     - layout_discovery
     - link
+    - media
     - text
 third_party_settings:
   field_layout:
@@ -23,11 +24,13 @@ bundle: hero
 mode: default
 content:
   field_hero_bg_image:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: above
     settings:
-      view_mode: default
-      link: false
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 4
     region: content

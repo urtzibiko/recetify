@@ -1,4 +1,4 @@
-.cb-three-columns {
+.cb-four-columns {
   max-width: 100%;
   font-family: 'Poppins', sans-serif;
   &__title {
@@ -19,14 +19,22 @@
       margin-right: -100%;
     }
   }
-  &__snippet_area {
+  &__snippet-area {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
     padding-bottom: 50px;
+    &__row {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0px;
+    }
   }
-  &__button_area {
+  &__button-area {
     display: flex;
     justify-content: center;
   }
+
 }
+

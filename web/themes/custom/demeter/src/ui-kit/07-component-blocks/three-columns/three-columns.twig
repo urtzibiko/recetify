@@ -1,6 +1,7 @@
 {% extends '@component-blocks/component-block.twig' %}
 {% set componentName = 'three-columns' %}
 {% block content %}
+  <h2 class="cb-{{ componentName }}__title">{{ title }}</h2>
   <div class="cb-{{ componentName }}__snippet_area">
   {% for item in snippets %}
     {{ item|render_dto }}
