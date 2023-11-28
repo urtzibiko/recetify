@@ -39,12 +39,13 @@ class TwigExtension extends \Drupal\Core\Template\TwigExtension {
   /**
    * @param array|null $input
    *
-   * @return \Drupal\Component\Render\MarkupInterface|null
+   * @return mixed
    */
-  public function renderDto(?array $input = NULL): ?MarkupInterface {
+  public function renderDto(mixed $input = NULL): mixed {
 
-    if (NULL === $input) {
-      return NULL;
+    // If what we are rendering is not a DTO, return it "as is".
+    if (empty($input['type'])) {
+      return $input;
     }
 
     /** @var \Drupal\components\Template\ComponentsRegistry $componentsRegistry */
