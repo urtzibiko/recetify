@@ -11,20 +11,18 @@ dependencies:
     - node.type.receta
   module:
     - datetime
-    - field_layout
-    - layout_discovery
     - text
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.receta.default
 targetEntityType: node
 bundle: receta
 mode: default
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_date:
     type: datetime_default
     label: above

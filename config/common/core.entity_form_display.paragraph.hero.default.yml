@@ -8,16 +8,9 @@ dependencies:
     - field.field.paragraph.hero.field_hero_opening_text
     - paragraphs.paragraphs_type.hero
   module:
-    - field_layout
-    - layout_discovery
     - link
     - media_library
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: paragraph.hero.default
 targetEntityType: paragraph
 bundle: hero

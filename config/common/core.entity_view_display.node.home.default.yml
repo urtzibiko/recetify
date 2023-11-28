@@ -8,19 +8,17 @@ dependencies:
     - node.type.home
   module:
     - entity_reference_revisions
-    - field_layout
-    - layout_discovery
     - user
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.home.default
 targetEntityType: node
 bundle: home
 mode: default
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_hero:
     type: entity_reference_revisions_entity_view
     label: above
