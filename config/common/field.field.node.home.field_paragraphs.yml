@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_paragraphs
     - node.type.home
+    - paragraphs.paragraphs_type.promoted_recipes
   module:
     - entity_reference_revisions
 id: node.home.field_paragraphs
@@ -20,6 +21,14 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    target_bundles: null
+    target_bundles:
+      promoted_recipes: promoted_recipes
     negate: 0
+    target_bundles_drag_drop:
+      hero:
+        weight: 3
+        enabled: false
+      promoted_recipes:
+        weight: 4
+        enabled: true
 field_type: entity_reference_revisions
