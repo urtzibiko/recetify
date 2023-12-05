@@ -41,16 +41,15 @@
 {% extends 'paragraph.html.twig' %}
 
 {% block content %}
-  {% include '@component-blocks/paragraph-hero/paragraph-hero.twig' with {
-    "image": content.field_hero_bg_image,
-    "teaser": content.field_hero_opening_text,
+  {% include '@component-blocks/three-columns/three-columns.twig' with {
+    "title": content.field_promoted_title,
+    "recetas": content.field_recipes,
     "button": {
       "type": "components/button",
       "data": {
-        "text": paragraph.field_hero_cta_button.title,
-        "url": paragraph.field_hero_cta_button.uri
+        "text": paragraph.field_cta.title,
+        "url": paragraph.field_cta.uri
       }
     }
   } only %}
 {% endblock %}
-
