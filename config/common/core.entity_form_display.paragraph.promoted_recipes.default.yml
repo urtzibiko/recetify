@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.promoted_recipes.field_cta
+    - field.field.paragraph.promoted_recipes.field_promoted_title
     - field.field.paragraph.promoted_recipes.field_recipes
     - paragraphs.paragraphs_type.promoted_recipes
   module:
@@ -15,15 +16,23 @@ mode: default
 content:
   field_cta:
     type: link_default
-    weight: 1
+    weight: 2
     region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+  field_promoted_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_recipes:
     type: entity_reference_autocomplete
-    weight: 0
+    weight: 1
     region: content
     settings:
       match_operator: CONTAINS
@@ -32,7 +41,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 10
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }

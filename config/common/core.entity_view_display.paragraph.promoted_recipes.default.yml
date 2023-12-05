@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.promoted_recipes.field_cta
+    - field.field.paragraph.promoted_recipes.field_promoted_title
     - field.field.paragraph.promoted_recipes.field_recipes
     - paragraphs.paragraphs_type.promoted_recipes
   module:
@@ -23,7 +24,15 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 1
+    weight: 2
+    region: content
+  field_promoted_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
     region: content
   field_recipes:
     type: entity_reference_label
@@ -31,6 +40,6 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden: {  }
