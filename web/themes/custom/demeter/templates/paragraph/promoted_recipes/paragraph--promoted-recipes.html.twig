@@ -40,10 +40,17 @@
 #}
 {% extends 'paragraph.html.twig' %}
 
+{% set items = [] %}
+{% for key, item in content.field_recipes %}
+  {% if key matches '/^\\d+$/' %}
+    {% set items = items|merge([item|without('title')]) %}
+  {% endif %}
+{% endfor %}
+
 {% block content %}
   {% include '@component-blocks/three-columns/three-columns.twig' with {
     "title": content.field_promoted_title,
-    "recetas": content.field_recipes,
+    "items": items,
     "button": {
       "type": "components/button",
       "data": {

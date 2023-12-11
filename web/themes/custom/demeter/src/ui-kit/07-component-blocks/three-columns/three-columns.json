@@ -1,10 +1,9 @@
 {
   "title": "Recetas destacadas",
-  "snippets": [
+  "items": [
     {
-    "type": "component-blocks/snippet-imgtxt",
-    "data":
-      {
+      "type": "component-blocks/snippet-imgtxt",
+      "data":{
         "imgsrc": "../../../assets/images/gyozas.png",
         "alt": "Crema de calabacín",
         "text": "Crema de calabacín",

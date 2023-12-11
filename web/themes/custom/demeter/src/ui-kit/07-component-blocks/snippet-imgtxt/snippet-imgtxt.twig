@@ -2,7 +2,7 @@
 {% set componentName = 'snippet-imgtxt' %}
 {% block content %}
   <a href="{{ url }}" class="cb-{{ componentName }}__img">
-    <img src="{{ imgsrc }}" alt="{{ alt }}"/>
+    {{ image|render_dto }}
   </a>
 
     <a href="{{ url }}" class="cb-{{ componentName }}__txt">
