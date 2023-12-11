@@ -1,0 +1,19 @@
+uuid: af0a9726-9f39-484f-8900-d670ee1bae3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.promoted_recipes.field_cta
+    - field.field.paragraph.promoted_recipes.field_promoted_title
+    - field.field.paragraph.promoted_recipes.field_recipes
+    - paragraphs.paragraphs_type.promoted_recipes
+id: paragraph.promoted_recipes.preview
+targetEntityType: paragraph
+bundle: promoted_recipes
+mode: preview
+content: {  }
+hidden:
+  field_cta: true
+  field_promoted_title: true
+  field_recipes: true

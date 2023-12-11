@@ -12,7 +12,7 @@ bundle: promoted_recipes
 label: 'Promoted title'
 description: 'Título visible sobre los snippets'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
