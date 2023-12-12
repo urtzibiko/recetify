@@ -36,3 +36,11 @@ function demeter_theme_suggestions_node_alter(array &$suggestions, array $variab
 
  $suggestions [] = "node__urtzi";
 }
+
+
+function demeter_preprocess_page(&$variables) {
+  $site_config = \Drupal::config('system.site');
+  $variables['logopath'] = \Drupal::theme()->getActiveTheme()->getLogo();
+  $variables['pruebapath'] = "themes/custom/demeter/src/assets/images/logogrande2.png";
+  $a=0;
+}

@@ -45,7 +45,44 @@
 <div class="layout-container">
 
   <header role="banner">
-    {{ page.header }}
+   {{ page.header }}
+    {{ logopath }}
+    {{ pruebapath }}
+    {% block content %}
+      {% include '@component-blocks/header/header.twig' with {
+        "logo": {
+          "type": "components/image",
+          "data": {
+            "src": pruebapath,
+            "alt": "Verduras de la temporada de invierno"
+          }
+        },
+        "menu": {
+          "type": "component-blocks/header-menu",
+          "data": {
+            "items": [
+              {
+                "text" : "Uno",
+                "URL" : "loquesea"
+              },
+              {
+                "text" : "Dos",
+                "URL" : "loquesea"
+              },
+              {
+                "text" : "Tres",
+                "URL" : "loquesea"
+              },
+              {
+                "text" : "Cuatro",
+                "URL" : "loquesea"
+              }
+            ]
+          }
+        }
+      } %}
+
+    {% endblock %}
   </header>
 
 {#  {{ page.primary_menu }}
