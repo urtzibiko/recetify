@@ -19,3 +19,28 @@ function demeter_preprocess_image_widget(array &$variables) {
     unset($data['preview']);
   }
 }
+
+function demeter_preprocess_node (&$variables) {
+  //if ($variables["node"])
+  $node = $variables["node"];
+  if ($node->getType() == "receta" && $variables["view_mode"] == "teaser") {
+    unset($variables["label"]);
+    $a=0;
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function demeter_theme_suggestions_node_alter(array &$suggestions, array $variables) {
+
+ $suggestions [] = "node__urtzi";
+}
+
+
+function demeter_preprocess_page(&$variables) {
+  $site_config = \Drupal::config('system.site');
+  $variables['logopath'] = \Drupal::theme()->getActiveTheme()->getLogo();
+  $variables['pruebapath'] = "themes/custom/demeter/src/assets/images/logogrande2.png";
+  $a=0;
+}

@@ -1,6 +1,11 @@
 {
-  "imgsrc": "../../../assets/images/gyozas.png",
-  "alt": "Gyozas de pollo sobre plato de madera",
+  "image": {
+    "type": "components/image",
+    "data": {
+      "src": "../../../assets/images/gyozas.png",
+      "alt": "Gyozas de pollo sobre plato de madera"
+    }
+  },
   "text": "Gyozas de pollo con verduras",
   "url": "#"
 }

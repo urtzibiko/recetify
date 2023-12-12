@@ -1,18 +1,19 @@
-uuid: eed32bf2-f60a-46c4-abb1-186a72d203ba
+uuid: 073c052b-fc08-46da-8752-811989ff57f3
 langcode: es
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.paragraph.teaser
     - field.field.paragraph.promoted_recipes.field_cta
     - field.field.paragraph.promoted_recipes.field_promoted_title
     - field.field.paragraph.promoted_recipes.field_recipes
     - paragraphs.paragraphs_type.promoted_recipes
   module:
     - link
-id: paragraph.promoted_recipes.default
+id: paragraph.promoted_recipes.teaser
 targetEntityType: paragraph
 bundle: promoted_recipes
-mode: default
+mode: teaser
 content:
   field_cta:
     type: link
@@ -38,8 +39,8 @@ content:
     type: entity_reference_entity_view
     label: hidden
     settings:
-      view_mode: teaser
-      link: false
+      view_mode: default
+      link: true
     third_party_settings: {  }
     weight: 1
     region: content

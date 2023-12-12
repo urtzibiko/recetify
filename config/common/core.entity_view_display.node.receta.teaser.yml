@@ -20,14 +20,9 @@ targetEntityType: node
 bundle: receta
 mode: teaser
 content:
-  content_moderation_control:
-    settings: {  }
-    third_party_settings: {  }
-    weight: -20
-    region: content
   field_date:
     type: datetime_default
-    label: above
+    label: hidden
     settings:
       timezone_override: ''
       format_type: medium
@@ -44,7 +39,7 @@ content:
     region: content
   field_recipe_image:
     type: media_thumbnail
-    label: above
+    label: hidden
     settings:
       image_link: ''
       image_style: thumbnail
@@ -55,12 +50,13 @@ content:
     region: content
   field_teaser:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 3
     region: content
 hidden:
+  content_moderation_control: true
   field_description: true
   langcode: true
   links: true

@@ -6,7 +6,6 @@ dependencies:
     - field.field.paragraph.hero.field_hero_bg_image
     - field.field.paragraph.hero.field_hero_cta_button
     - field.field.paragraph.hero.field_hero_opening_text
-    - image.style.16x9_large
     - paragraphs.paragraphs_type.hero
   module:
     - link
@@ -22,7 +21,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: 16x9_large
+      image_style: ''
       image_loading:
         attribute: lazy
     third_party_settings: {  }

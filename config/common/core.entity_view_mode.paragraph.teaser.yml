@@ -1,0 +1,10 @@
+uuid: b4855d26-0c84-4de2-85bd-4895498c54fb
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.teaser
+label: Resumen
+targetEntityType: paragraph
+cache: true
