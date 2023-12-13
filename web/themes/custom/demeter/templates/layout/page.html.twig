@@ -46,8 +46,6 @@
 
   <header role="banner">
    {{ page.header }}
-    {{ logopath }}
-    {{ pruebapath }}
     {% block content %}
       {% include '@component-blocks/header/header.twig' with {
         "logo": {
