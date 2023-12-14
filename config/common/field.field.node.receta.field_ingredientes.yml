@@ -1,0 +1,21 @@
+uuid: 1d3ef019-7306-4d63-b9dc-abb792adf3bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ingredientes
+    - node.type.receta
+id: node.receta.field_ingredientes
+field_name: field_ingredientes
+entity_type: node
+bundle: receta
+label: Ingredientes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

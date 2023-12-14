@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.receta.field_date
     - field.field.node.receta.field_description
+    - field.field.node.receta.field_ingredientes
     - field.field.node.receta.field_public_title
     - field.field.node.receta.field_recipe_image
     - field.field.node.receta.field_teaser
@@ -67,6 +68,16 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+  field_ingredientes:
+    type: entity_reference_autocomplete
+    weight: 101
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_public_title:
     type: string_textfield

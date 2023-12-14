@@ -1,0 +1,8 @@
+uuid: 33e45e9b-58b9-4969-9eb7-fdafe0f441d8
+langcode: es
+status: true
+dependencies: {  }
+name: Ingredientes
+vid: ingredients
+description: 'Ingredientes de cocina'
+weight: 0
