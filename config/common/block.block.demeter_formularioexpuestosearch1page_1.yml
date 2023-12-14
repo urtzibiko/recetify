@@ -1,0 +1,23 @@
+uuid: cef4842a-1167-40dc-a590-8d7d93e895b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.search1
+  module:
+    - views
+  theme:
+    - demeter
+id: demeter_formularioexpuestosearch1page_1
+theme: demeter
+region: content
+weight: -8
+provider: null
+plugin: 'views_exposed_filter_block:search1-page_1'
+settings:
+  id: 'views_exposed_filter_block:search1-page_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+visibility: {  }
