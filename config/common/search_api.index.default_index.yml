@@ -6,8 +6,8 @@ dependencies:
     - search_api.server.default_server
     - core.entity_view_mode.node.search_index
   module:
-    - search_api
     - node
+    - search_api
 _core:
   default_config_hash: 3aiqici40Ky7H7_FK6JBlEawsJtrD7MGX3dQh3xgqoc
 id: default_index
@@ -15,26 +15,6 @@ name: 'Default content index'
 description: 'Default content index created by the Database Search Defaults module'
 read_only: false
 field_settings:
-  author:
-    label: 'Author name'
-    datasource_id: 'entity:node'
-    property_path: 'uid:entity:name'
-    type: string
-  changed:
-    label: Changed
-    datasource_id: 'entity:node'
-    property_path: changed
-    type: date
-  created:
-    label: 'Authored on'
-    datasource_id: 'entity:node'
-    property_path: created
-    type: date
-  field_tags:
-    label: Tags
-    datasource_id: 'entity:node'
-    property_path: field_tags
-    type: integer
   node_grants:
     label: 'Node access information'
     property_path: search_api_node_grants
@@ -60,22 +40,18 @@ field_settings:
     type: boolean
     indexed_locked: true
     type_locked: true
-  sticky:
-    label: 'Sticky at top of lists'
-    datasource_id: 'entity:node'
-    property_path: sticky
-    type: boolean
+    dependencies:
+      module:
+        - node
   title:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
     type: text
     boost: 8.0
-  type:
-    label: 'Content type'
-    datasource_id: 'entity:node'
-    property_path: type
-    type: string
+    dependencies:
+      module:
+        - node
   uid:
     label: 'Author ID'
     datasource_id: 'entity:node'
@@ -83,8 +59,17 @@ field_settings:
     type: integer
     indexed_locked: true
     type_locked: true
+    dependencies:
+      module:
+        - node
 datasource_settings:
-  'entity:node': {  }
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
 processor_settings:
   add_url:
     weights:
@@ -96,13 +81,16 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -4
+  custom_value: {  }
   entity_status:
     weights:
       preprocess_index: -10
+  entity_type: {  }
   html_filter:
     weights:
       preprocess_index: -3
       preprocess_query: -6
+    all_fields: false
     fields:
       - rendered_item
     title: true
@@ -117,9 +105,11 @@ processor_settings:
     weights:
       preprocess_index: -5
       preprocess_query: -8
+    all_fields: false
     fields:
       - rendered_item
       - title
+  language_with_fallback: {  }
   rendered_item:
     weights:
       add_properties: 0
@@ -128,6 +118,7 @@ processor_settings:
     weights:
       postprocess_query: -10
       preprocess_query: -10
+    all_fields: false
     fields:
       - rendered_item
       - title
@@ -171,21 +162,25 @@ processor_settings:
     weights:
       preprocess_index: -2
       preprocess_query: -5
+    all_fields: false
     fields:
       - rendered_item
       - title
     spaces: ''
+    ignored: ._-
     overlap_cjk: 1
     minimum_word_size: '3'
   transliteration:
     weights:
       preprocess_index: -4
       preprocess_query: -7
+    all_fields: false
     fields:
       - rendered_item
       - title
 tracker_settings:
-  default: {  }
+  default:
+    indexing_order: fifo
 options:
   cron_limit: 50
   index_directly: true
