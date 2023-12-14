@@ -11,7 +11,7 @@ id: node.receta.field_description
 field_name: field_description
 entity_type: node
 bundle: receta
-label: Descripción
+label: Elaboración
 description: ''
 required: true
 translatable: true

@@ -1,0 +1,9 @@
+{% extends 'node.html.twig' %}
+{% block content %}
+  <h2>{{ content.field_public_title }}</h2>
+  {{ content.field_recipe_image }}
+  <h3>{{ 'Ingredientes'|t }}</h3>
+  {{ content.field_ingredientes }}
+  <h3>{{ 'Elaboración'|t }}</h3>
+  {{ content.field_description }}
+{% endblock %}

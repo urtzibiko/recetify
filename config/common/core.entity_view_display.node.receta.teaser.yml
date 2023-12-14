@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.receta.field_date
     - field.field.node.receta.field_description
+    - field.field.node.receta.field_ingredientes
     - field.field.node.receta.field_public_title
     - field.field.node.receta.field_recipe_image
     - field.field.node.receta.field_teaser
@@ -63,5 +64,6 @@ content:
 hidden:
   content_moderation_control: true
   field_description: true
+  field_ingredientes: true
   langcode: true
   links: true

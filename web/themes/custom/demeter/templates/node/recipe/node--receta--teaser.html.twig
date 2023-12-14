@@ -1,7 +1,6 @@
 {% extends 'node.html.twig' %}
 {# "imgsrc": file_url(content.field_recipe_image.0['#item'].entity.uri.value), #}
 {% block content %}
-  {{ dump(content) }}
   {% include '@component-blocks/snippet-imgtxt/snippet-imgtxt.twig' with {
     "url": url,
     "image": content.field_recipe_image,
