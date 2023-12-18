@@ -5,4 +5,9 @@ base:
   js:
     build/assets/js/vendor.js: {}
     build/assets/js/app.js: {}
-
+tippy.js:
+  css:
+    theme:
+      vendor/tippy.js/tippy.css: {}
+    js:
+      vendor/tippy.js/tippy-bundle.umd.js: {}
