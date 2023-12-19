@@ -1,5 +1,5 @@
 {
-  "name": "Demeter",
+  "name": "demeter",
   "scripts": {
     "start": "node_modules/gulp/bin/gulp.js",
     "build": "node_modules/gulp/bin/gulp.js build --production",
@@ -56,16 +56,14 @@
     "node-notifier": "^5.1",
     "node-sass": "^4.13",
     "node-sass-import-once": "^1.2",
-    "popper.js": "^1.16",
     "postcss-critical-split": "^2.5",
     "sass-rem": "^2.0.1",
     "svgo": "^3.0",
     "twig-markdown": "^1.0",
     "typi": "^3.2"
-
-
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
     "tippy.js": "^6.3.7"
   }
 }

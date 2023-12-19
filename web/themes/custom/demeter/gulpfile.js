@@ -40,6 +40,8 @@ const paths = {
     'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
     'node_modules/imagesloaded/imagesloaded.pkgd.js',
     'node_modules/clamp-js/clamp.js',
+    'node_modules/@popperjs/core/dist/umd/popper.js',
+    'node_modules/tippy.js/dist/tippy-bundle.umd.js'
   ],
   images: {
     source: 'src/assets/images/',
