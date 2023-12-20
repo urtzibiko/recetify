@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * Implements hook_cron().
+ */
+function urtziCron_cron() {
+  Drupal::messenger()->addMessage('Cron se ha ejecutado!! Y mejor aún, el módulo funciona!! Yuhuuuuu');
+}

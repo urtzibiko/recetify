@@ -22,6 +22,7 @@
         "drupal/core-project-message": "^10.1",
         "drupal/core-recommended": "^10.1",
         "drupal/devel": "^5.0",
+        "drupal/examples": "^4.0",
         "drupal/field_group": "^3.4",
         "drupal/focal_point": "^2.0",
         "drupal/metatag": "^2.0",

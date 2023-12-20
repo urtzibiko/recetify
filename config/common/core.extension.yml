@@ -65,6 +65,7 @@ module:
   toolbar: 0
   tour: 0
   update: 0
+  urtziCron: 0
   user: 0
   views_ui: 0
   workflows: 0

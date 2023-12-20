@@ -3,7 +3,7 @@
         'name' => 'drupal/recommended-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '3dbc58fc23df4dc3c073c9ccbcb5234c824e6ddf',
+        'reference' => 'b9a1f34b6e13fa3a114c77edec37e256267ce470',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -424,6 +424,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/examples' => array(
+            'pretty_version' => '4.0.2',
+            'version' => '4.0.2.0',
+            'reference' => '4.0.2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/examples',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/field_group' => array(
             'pretty_version' => '3.4.0',
             'version' => '3.4.0.0',
@@ -499,7 +508,7 @@
         'drupal/recommended-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '3dbc58fc23df4dc3c073c9ccbcb5234c824e6ddf',
+            'reference' => 'b9a1f34b6e13fa3a114c77edec37e256267ce470',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
