@@ -10,7 +10,7 @@ class PizzaDoughCalculatorController extends ControllerBase {
 
     return [
       '#theme' => 'pizza_dough_calculator',
-      '#title' => 'Pizza Dough Calculator'
+      '#title' => 'Calculadora para masa de pizza'
     ];
   }
 }

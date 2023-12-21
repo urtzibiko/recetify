@@ -10,6 +10,7 @@ dependencies:
     - file
     - filter
     - media
+    - pizza_dough_calculator
     - search
     - shortcut
     - system
@@ -20,6 +21,7 @@ label: 'Usuario autenticado'
 weight: 1
 is_admin: false
 permissions:
+  - 'access calculator page'
   - 'access comments'
   - 'access content'
   - 'access shortcuts'

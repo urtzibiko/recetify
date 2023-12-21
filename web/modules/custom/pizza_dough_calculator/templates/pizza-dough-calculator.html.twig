@@ -1,16 +1,17 @@
 {% block content %}
   {{ attach_library('pizza_dough_calculator/pizza_dough_calculator') }}
-<h1>{{ title }}</h1>
+<div class="calculadora">
+  <h1>{{ title }}</h1>
 
-<label for="harina">Harina (g):</label>
-<input type="number" id="harina" value="0"  oninput="calcularProporciones()" >
+  <label for="harina">Harina (g):</label>
+  <input type="number" id="harina" value="0"/>
 
-<h2>Cantidades Recalculadas:</h2>
+  <h2>Cantidades Necesarias:</h2>
 
-<p>Harina: <span id="harinaRecalculada">0</span> g</p>
-<p>Agua: <span id="aguaRecalculada">0</span> g</p>
-<p>Sal: <span id="salRecalculada">0</span> g</p>
-<p>Levadura: <span id="levaduraRecalculada">0</span> g</p>
+  <p>Agua: <span id="aguaRecalculada">0</span> g</p>
+  <p>Sal: <span id="salRecalculada">0</span> g</p>
+  <p>Levadura fresca: <span id="levaduraRecalculada">0</span> g / Seca: <span id="levaduraSecaRecalculada">0</span> g</p>
 
+</div>
 
 {% endblock %}
