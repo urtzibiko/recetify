@@ -1,0 +1,5 @@
+name: 'Pizza dough calculator'
+type: module
+description: 'Creates a page with a calculator for making pizza dough'
+package: Urtzi's custom modules
+core_version_requirement: ^10

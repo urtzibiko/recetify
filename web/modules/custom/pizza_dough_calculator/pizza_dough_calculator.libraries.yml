@@ -1,0 +1,6 @@
+pizza_dough_calculator:
+  css:
+    theme:
+      css/pdc.css: {}
+  js:
+    js/pdc.js: {}

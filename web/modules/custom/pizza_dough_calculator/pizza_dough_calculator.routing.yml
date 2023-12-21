@@ -1,0 +1,13 @@
+# If the user accesses http://example.com/?q=examples/page-example/simple,
+# the routing system will look for a route with that path. In this case it will
+# find a match, and execute the _controller callback. Access to this path
+# requires "access simple page" permission.
+pizza_dough_calculator.page:
+  path: '/pizza_dough_calculator'
+  defaults:
+    _controller: '\Drupal\pizza_dough_calculator\Controller\PizzaDoughCalculatorController::page'
+#    _title: 'Pizza dough calculator'
+#  requirements:
+#    _permission: 'access calculator page'
+  requirements:
+    _permission: 'access content'
